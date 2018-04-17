@@ -1,9 +1,10 @@
 <li  [ngClass]="{'list-group-item' : true, 
-'list-group-item-success' : loveits >'0',
-'list-group-item-danger' : loveits === '0'}">
+'list-group-item-success' : l > d,
+'list-group-item-danger' : d > l}">
 <p style="text-align: right">{{ T | date : 'short' }} </p>
   <h3>{{ title }}  </h3>
   <h4>{{ content }}</h4>
-  <button class = "btn btn-success" >Love it</button> 
-  <button class = "btn btn-danger" >Dont love it</button> 
+  <button class = "btn btn-success" (click)="nbrlik()" >Love it  {{ l }}  </button> 
+  <button class = "btn btn-danger" (click)="nbrdes()" >Dont love it {{ d }} </button> 
+ 
 </li>

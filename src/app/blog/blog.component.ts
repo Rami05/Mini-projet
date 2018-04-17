@@ -11,6 +11,15 @@ export class BlogComponent implements OnInit {
 
   @Input() loveits : number;
   @Input() T :Date ;
+  l = 0;
+  d = 0;
+
+    nbrlik(){
+         return this.l = this.l + 1;
+    }
+    nbrdes(){
+      return this.d = this.d + 1 ;
+    }
 
   constructor() { }
 
